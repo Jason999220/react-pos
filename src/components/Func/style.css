@@ -1,0 +1,13 @@
+.func {
+  width: 200px;
+  height: 350px;
+  border: 1px royalblue solid;
+  /* margin: 16px auto; */
+  position: absolute;
+  left: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.func-list {
+  margin: 8px 0;
+}

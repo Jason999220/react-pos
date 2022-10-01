@@ -1,0 +1,46 @@
+.seat {
+  width: 500px;
+  height: 350px;
+  border-left: 5px solid rgb(204, 110, 110);
+  position: relative;
+}
+.box101 {
+  left: 100px;
+  top: 230px;
+}
+.box102 {
+  left: 100px;
+  top: 170px;
+}
+.box103 {
+  left: 100px;
+  top: 110px;
+}
+.box104 {
+  left: 100px;
+  top: 50px;
+}
+.box201 {
+  width: 100px;
+  height: 100px;
+  left: 200px;
+  top: 180px;
+}
+.box202 {
+  width: 100px;
+  height: 100px;
+  left: 360px;
+  top: 180px;
+}
+.box203 {
+  width: 100px;
+  height: 100px;
+  left: 360px;
+  top: 50px;
+}
+.box204 {
+  width: 100px;
+  height: 100px;
+  left: 200px;
+  top: 50px;
+}

@@ -1,0 +1,41 @@
+h3 {
+  font-size: 2rem;
+  margin: auto 1rem;
+}
+input {
+  border: 0; /* 去除未選中狀態邊框 */
+  outline: none; /* 去除選中狀態邊框 */
+  background-color: rgba(0, 0, 0, 0); /* 透明背景 */
+  width: 60px;
+  font-size: 2rem;
+  text-align: center;
+}
+.people {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+}
+.peopleBox {
+  display: flex;
+}
+.peopleChage-button {
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+.peopleChage-button:hover {
+  background-color: rgba(91, 50, 50, 0.817);
+  color: #f4f4f4;
+}
+.increasepeople,
+.decreasepeople {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.peopleChange {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
