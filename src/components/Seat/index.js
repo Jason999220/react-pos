@@ -1,11 +1,10 @@
 import React, { useState} from "react";
 import { Link } from "react-router-dom";
-import PubSub from "pubsub-js";
 import "./style.css";
 // import table from '../../data/table'
 /* 右側座位 */
 
-export default function Seat() {
+export default function Seat(props) {
   // 已點餐
   // order =()=>{
     //  PubSub.publish('訂閱名稱',{資料對象})
