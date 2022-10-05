@@ -3,17 +3,17 @@ const data = {
         {   
             "name":"美式咖啡",
             'id':1,
-            "price":45
+            "price":110
           },
           {   
-            "name":"大熱狗",
+            "name":"貢丸湯",
             'id':2,
-            "price":55
+            "price":90
           },
           {   
             "name":"夏威夷波薩",
             'id':3,
-            "price":100
+            "price":180
           },
           {   
             "name":"巧克力聖代",
@@ -28,17 +28,17 @@ const data = {
           {   
             "name":"棉花糖",
             'id':6,
-            "price":10
+            "price":30
           },
           {   
             "name":"漂浮抹茶",
             'id':7,
-            "price":65
+            "price":165
           },
           {   
             "name":"檸檬紅茶",
             'id':8,
-            "price":25
+            "price":188
           },
           {   
             "name":"紅豆小町",

@@ -49,6 +49,8 @@ export default function Basket(props) {
     const {cartItems,onAdd,onRemove} = props;
     // set money
     const porductsPrice = cartItems.reduce((a,c)=>(a + c.price * c.qty ), 0);
+    const serviceCharge = (porductsPrice*0.1).toFixed(0)
+    const totalPrice = porductsPrice+parseInt(serviceCharge)
   return (
     <div className="basket">
       <h2>Cart Items</h2>
@@ -71,17 +73,15 @@ export default function Basket(props) {
       {
         cartItems.length !== 0 && (
           <>
-              <hr></hr>
-              {/* 顯示金錢 */}
-              <div className='row'>
-                  <div className='col-1 text-right weight-1' >
-                    合計：${porductsPrice} <br/>
-                    服務費：${porductsPrice*0.1} <br/>
-                    Total Price ： ${porductsPrice+porductsPrice*0.1}
-                  </div>
-              </div>
               <hr/>
-              <div className='row'>
+              {/* 顯示金錢 */}
+                <div className='col-1 text-right weight-1' >
+                  <p className="padding-b-1">小計：${porductsPrice}</p>
+                  <p className="padding-b-1">服務費 10%：${serviceCharge}</p>
+                  <p className="padding-b-1">Total Price ： ${totalPrice}</p>
+                </div>
+              <hr/>
+              <div className='center'>
                 <button onClick={()=>alert('已完成點餐並結帳')}>
                   <Link to="/peopleState">已完成點餐並結帳</Link>
                 </button>

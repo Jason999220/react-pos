@@ -13,6 +13,7 @@
         座位資訊動態化
     step3 其餘功能
         利用localstorage儲存所有點過的餐點 ？ 能否只用前端進行儲存
+        建立已點餐完功能的畫面，與座位資訊交互
 
 利用 create-react-app 創建 react 腳手架
 利用 React-route 進行 SPA
@@ -24,9 +25,10 @@
         3. Local Storage
         4. Ternary Operator
     2. React
-        1. ReactHook
-        2. React-Route
-        3. React-pubsub-js
+        1. React-useState
+        2. React-useEffect
+        3. React-Route
+        4. React-pubsub-js
     3. Other
         1. SPA
 

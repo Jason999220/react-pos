@@ -159,7 +159,7 @@ button {
   position: absolute;
   top: 100px;
   margin: 5px;
-  background-color: rgb(126, 125, 125);
+  background-color: rgb(167, 163, 163);
   border-radius: 15%;
 }
 .box:hover {
@@ -168,25 +168,25 @@ button {
 }
 .container {
   width: 1200px;
-  height: 500px;
+  height: 355px;
   border: 3px peru solid;
   margin: 1rem auto;
   position: relative;
 }
 main {
-  width: 950px;
+  width: 80%;
   height: 350px;
   border: 1px palevioletred solid;
-  /* margin: 16px 0px; */
   position: absolute;
   right: 0;
   display: flex;
   justify-content: space-between;
+  
 }
 a {
   text-decoration: none;
   color: black;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 .flex{
   display:flex;
@@ -222,25 +222,23 @@ a {
   background-color: burlywood;
 }
 .add{
-  font-size: 0.8rem;
-  padding: 0.2rem;
-  margin: 0.1rem;
+  font-size: 1.2rem;
+  padding: 0.1rem;
+  margin: 0.2rem;
+  margin-left:1rem;
   border: 0.1rem #404040 solid;
-  background-color: #f0c040;
-  width: 100%;
   cursor:pointer;
-  background-color: #40c0f0;
+  background-color: #27f1dd;
   width: 1.5rem;
 }
 .remove{
-  font-size: 0.8rem;
-  padding: 0.2rem;
-  margin: 0.1rem;
+  font-size: 1.2rem;
+  padding: 0.1rem;
+  margin: 0.2rem;
+  margin-right:1rem;
   border: 0.1rem #404040 solid;
-  background-color: #f0c040;
-  width: 100%;
   cursor:pointer;
-  background-color: #f04040;
+  background-color: #fd1515;
   width: 1.5rem;
 }
 .col-1{
@@ -255,6 +253,9 @@ a {
 }
 .m-x1{
   margin: -5px 0px;
+}
+.padding-b-1{
+  padding-bottom: 1rem;
 }
 .size-1{
   font-size: 1rem;
@@ -287,4 +288,11 @@ a {
   margin: 1rem 0;
   padding: 0.5rem;
   background: rgb(214, 212, 212);
+  border-radius: 1.2rem;
+}
+
+.orderDoneList{
+  width: 40%;
+  background-color: pink;
+  height: 100%;
 }
