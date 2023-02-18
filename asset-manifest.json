@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-pos/static/css/main.3fed26a1.css",
+    "main.js": "/react-pos/static/js/main.eeeb120a.js",
+    "index.html": "/react-pos/index.html",
+    "main.3fed26a1.css.map": "/react-pos/static/css/main.3fed26a1.css.map",
+    "main.eeeb120a.js.map": "/react-pos/static/js/main.eeeb120a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3fed26a1.css",
+    "static/js/main.eeeb120a.js"
+  ]
+}
