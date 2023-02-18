@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { useState } from "react";
 import MenuList from "./menu-list";
 import Basket from "./Basket";
 import data from "../../data/data";
@@ -35,46 +35,44 @@ export default class Menu extends Component {
 
 export default function Menu() {
   // 從 data 取得 product
-  const {products} = data
+  const { products } = data;
   // 設定CartItem 初始值 Hook useState
-  const [cartItems,setCartItems] = useState([]);
+  const [cartItems, setCartItems] = useState([]);
   // const [cartItems,setCartItems] = useState(
   //   localStorage.getItem('basket')
   //   ? JSON.parse(localStorage.getItem('basket'))
   //   : []);
   // 將商品加入購物車
-  const onAdd = (product)=>{
-    const exist = cartItems.find( (x) => (x.id === product.id));
-    if(exist){
-      setCartItems(cartItems.map( (x) =>
-        (x.id === product.id ? {...exist,qty:exist.qty+1} : x)
-      ))
-    }else{
-      setCartItems([...cartItems,{ ...product,qty:1}])
+  const onAdd = (product) => {
+    const exist = cartItems.find((x) => x.id === product.id);
+    if (exist) {
+      setCartItems(
+        cartItems.map((x) =>
+          x.id === product.id ? { ...exist, qty: exist.qty + 1 } : x
+        )
+      );
+    } else {
+      setCartItems([...cartItems, { ...product, qty: 1 }]);
     }
     // localStorage.setItem('basket',JSON.stringify([...cartItems,{ ...product,qty:1}]))
-  }
+  };
   // 將商品從購物車移除
-  const onRemove = (product)=>{
-    const exist = cartItems.find((x)=> ( x.id === product.id ));
-    if(exist.qty === 1){
-      setCartItems(cartItems.filter((x)=> (x.id !== product.id)))
-    }else{
+  const onRemove = (product) => {
+    const exist = cartItems.find((x) => x.id === product.id);
+    if (exist.qty === 1) {
+      setCartItems(cartItems.filter((x) => x.id !== product.id));
+    } else {
       setCartItems(
-        cartItems.map((x)=>(
-          x.id === product.id ? {...exist,qty:exist.qty-1} : x
-        ))
-      )
+        cartItems.map((x) =>
+          x.id === product.id ? { ...exist, qty: exist.qty - 1 } : x
+        )
+      );
     }
-    // setCartItems({cartItems:cartItems.filter((x)=>(x.id !== product.id))})
-    // localStorage.setItem('basket',JSON.stringify(cartItems))
-  }
-  // console.log(cartItems);
-  // console.log(setCartItems);
+  };
   return (
     <div className="flex">
-    <MenuList products={products} onAdd={onAdd}/>
-    <Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}/>
-  </div>
-  )
+      <MenuList products={products} onAdd={onAdd} />
+      <Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />
+    </div>
+  );
 }
