@@ -46,49 +46,51 @@ export default class MyMeals extends Component {
 */
 
 export default function Basket(props) {
-    const {cartItems,onAdd,onRemove} = props;
-    // set money
-    const porductsPrice = cartItems.reduce((a,c)=>(a + c.price * c.qty ), 0);
-    const serviceCharge = (porductsPrice*0.1).toFixed(0)
-    const totalPrice = porductsPrice+parseInt(serviceCharge)
+  const { cartItems, onAdd, onRemove } = props;
+  // set money
+  const porductsPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0);
+  const serviceCharge = (porductsPrice * 0.1).toFixed(0);
+  const totalPrice = porductsPrice + parseInt(serviceCharge);
   return (
     <div className="basket">
-      <h2>Cart Items</h2>
-      {
-        cartItems.map((item)=>(
-          <div className="basket-item" key={item.id}>
-            <div className="size-2">{item.name}</div>
-            <div className='col-2 right m-x1'>
-              {item.qty} x ${item.price}
-              <button className='add' onClick={()=>onAdd(item)}>
-                +
-              </button>
-              <button className='remove' onClick={()=>onRemove(item)}>
-                -
-              </button>
-            </div>
+      <h2>購物車</h2>
+      {cartItems.map((item) => (
+        <div className="basket-item" key={item.id}>
+          <div className="size-2">{item.name}</div>
+          <div className="col-2 right m-x1">
+            {item.qty} x ${item.price}
+            <button className="add" onClick={() => onAdd(item)}>
+              +
+            </button>
+            <button className="remove" onClick={() => onRemove(item)}>
+              -
+            </button>
           </div>
-        ))
-      }
-      {
-        cartItems.length !== 0 && (
-          <>
-              <hr/>
-              {/* 顯示金錢 */}
-                <div className='col-1 text-right weight-1' >
-                  <p className="padding-b-1">小計：${porductsPrice}</p>
-                  <p className="padding-b-1">服務費 10%：${serviceCharge}</p>
-                  <p className="padding-b-1">Total Price ： ${totalPrice}</p>
-                </div>
-              <hr/>
-              <div className='center'>
-                <button onClick={()=>alert('已完成點餐並結帳')}>
-                  <Link to="/peopleState">已完成點餐並結帳</Link>
-                </button>
-              </div>
-          </>
-        )
-      }
+        </div>
+      ))}
+      {cartItems.length !== 0 && (
+        <>
+          <hr />
+          {/* 顯示金錢 */}
+          <div className="moneyBox">
+            <p className="padding-b-1 size-2">
+              餐點金額 : <span className="money">${porductsPrice}</span>
+            </p>
+            <p className="padding-b-1 size-2">
+              服務費 : <span className="money">${serviceCharge}</span>
+            </p>
+            <p className="padding-b-1 size-2">
+              總金額 : <span className="money">${totalPrice}</span>
+            </p>
+          </div>
+          <hr />
+          <div className="center">
+            <button onClick={() => alert("已完成點餐並結帳")}>
+              <Link to="/peopleState">已完成點餐並結帳</Link>
+            </button>
+          </div>
+        </>
+      )}
     </div>
-  )
+  );
 }

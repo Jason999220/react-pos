@@ -22,7 +22,7 @@ input {
 }
 .peopleChage-button {
   padding: 0.5rem;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 .peopleChage-button:hover {
   background-color: rgba(91, 50, 50, 0.817);

@@ -64,7 +64,10 @@ export default class PeopleChange extends Component {
           <button className="peopleChage-button">
             {
               // 檢查大人小孩人數是否同時低於1
-              (this.state.adult===0 && this.state.children ===0)?(alert('人數錯誤'), '開始點餐'):<Link to="/menu">開始點餐</Link>
+              (this.state.adult===0 && this.state.children ===0)
+              
+              ?(alert('人數錯誤'),  '開始點餐')
+              :<Link to="/menu">開始點餐</Link>
             }
           </button>
         </div>

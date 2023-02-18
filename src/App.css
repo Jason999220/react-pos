@@ -181,17 +181,16 @@ main {
   right: 0;
   display: flex;
   justify-content: space-between;
-  
 }
 a {
   text-decoration: none;
   color: black;
   font-size: 1.7rem;
 }
-.flex{
-  display:flex;
+.flex {
+  display: flex;
 }
-.center{
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,68 +220,69 @@ a {
   cursor: pointer;
   background-color: burlywood;
 }
-.add{
+.add {
   font-size: 1.2rem;
   padding: 0.1rem;
   margin: 0.2rem;
-  margin-left:1rem;
+  margin-left: 1rem;
   border: 0.1rem #404040 solid;
-  cursor:pointer;
+  cursor: pointer;
   background-color: #27f1dd;
   width: 1.5rem;
 }
-.remove{
+.remove {
   font-size: 1.2rem;
   padding: 0.1rem;
   margin: 0.2rem;
-  margin-right:1rem;
+  margin-right: 1rem;
   border: 0.1rem #404040 solid;
-  cursor:pointer;
+  cursor: pointer;
   background-color: #fd1515;
   width: 1.5rem;
 }
-.col-1{
+
+.col-1 {
   flex: 2;
 }
-.col-2{
+.col-2 {
   flex: 3;
 }
-.right{
+.right {
   position: absolute;
   right: 0px;
 }
-.m-x1{
+.m-x1 {
   margin: -5px 0px;
 }
-.padding-b-1{
+.padding-b-1 {
   padding-bottom: 1rem;
 }
-.size-1{
+.size-1 {
   font-size: 1rem;
 }
-.size-2{
+.size-2 {
   font-size: 1.5rem;
 }
-.size-3{
+.size-3 {
   font-size: 2rem;
 }
-.weight-1{
-  font-weight:bold;
+.weight-1 {
+  font-weight: bold;
 }
-.weight-2{
+.weight-2 {
   font-weight: bolder;
 }
-.productName{
-  font-size:1.4rem;
+.productName {
+  font-size: 1.4rem;
   font-weight: bold;
 }
 /* Basket */
-.basket{
+.basket {
   width: 40%;
   height: 348px;
   overflow: auto;
 }
-.basket-item{
+.basket-item {
   display: flex;
   position: relative;
   margin: 1rem 0;
@@ -291,8 +291,17 @@ a {
   border-radius: 1.2rem;
 }
 
-.orderDoneList{
+.orderDoneList {
   width: 40%;
   background-color: pink;
   height: 100%;
+}
+
+.moneyBox {
+  font-weight: bold;
+  position: relative;
+}
+.money {
+  position: absolute;
+  right: 0;
 }

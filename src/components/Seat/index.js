@@ -121,29 +121,29 @@ export default function Seat(props) {
   return (
     <div className="seat">
       {orderDone101
-      ?<div className="box box101" onClick={TrueOrFalse101} style={changeStyle101}><Link to="/peopleState">101</Link></div>
-      :<div className="box box101" onClick={TrueOrFalse101} style={changeStyle101}><Link to="/peopleChange">101</Link></div>}
+      ?<Link to="/peopleState"><div className="box box101" onClick={TrueOrFalse101} style={changeStyle101}>101</div></Link>
+      :<Link to="/peopleChange"><div className="box box101" onClick={TrueOrFalse101} style={changeStyle101}>101</div></Link>}
       {orderDone102
-      ?<div className="box box102" onClick={TrueOrFalse102} style={changeStyle102}> <Link to="/peopleState">102</Link></div>
-      :<div className="box box102" onClick={TrueOrFalse102} style={changeStyle102}><Link to="/peopleChange">102</Link></div>}
+      ?<Link to="/peopleState"><div className="box box102" onClick={TrueOrFalse102} style={changeStyle102}>102</div></Link>
+      :<Link to="/peopleChange"><div className="box box102" onClick={TrueOrFalse102} style={changeStyle102}>102</div></Link>}
       {orderDone103
-        ?<div className="box box103" onClick={TrueOrFalse103} style={changeStyle103}> <Link to="/peopleState">103</Link></div>
-        :<div className="box box103" onClick={TrueOrFalse103} style={changeStyle103}><Link to="/peopleChange">103</Link></div>}
+        ?<Link to="/peopleState"><div className="box box103" onClick={TrueOrFalse103} style={changeStyle103}>103</div></Link>
+        :<Link to="/peopleChange"><div className="box box103" onClick={TrueOrFalse103} style={changeStyle103}>103</div></Link>}
       {orderDone104
-        ?<div className="box box104" onClick={TrueOrFalse104} style={changeStyle104}> <Link to="/peopleState">104</Link></div>
-        :<div className="box box104" onClick={TrueOrFalse104} style={changeStyle104}><Link to="/peopleChange">104</Link></div>}
+        ?<Link to="/peopleState"><div className="box box104" onClick={TrueOrFalse104} style={changeStyle104}>104</div></Link>
+        :<Link to="/peopleChange"><div className="box box104" onClick={TrueOrFalse104} style={changeStyle104}>104</div></Link>}
       {orderDone201
-        ?<div className="box box201" onClick={TrueOrFalse201} style={changeStyle201}> <Link to="/peopleState">201</Link></div>
-        :<div className="box box201" onClick={TrueOrFalse201} style={changeStyle201}><Link to="/peopleChange">201</Link></div>}
+        ?<Link to="/peopleState"><div className="box box201" onClick={TrueOrFalse201} style={changeStyle201}>201</div></Link>
+        :<Link to="/peopleChange"><div className="box box201" onClick={TrueOrFalse201} style={changeStyle201}>201</div></Link>}
       {orderDone202
-        ?<div className="box box202" onClick={TrueOrFalse202} style={changeStyle202}> <Link to="/peopleState">202</Link></div>
-        :<div className="box box202" onClick={TrueOrFalse202} style={changeStyle202}><Link to="/peopleChange">202</Link></div>}
+        ?<Link to="/peopleState"><div className="box box202" onClick={TrueOrFalse202} style={changeStyle202}>202</div></Link>
+        :<Link to="/peopleChange"><div className="box box202" onClick={TrueOrFalse202} style={changeStyle202}>202</div></Link>}
       {orderDone203
-        ?<div className="box box203" onClick={TrueOrFalse203} style={changeStyle203}> <Link to="/peopleState">203</Link></div>
-        :<div className="box box203" onClick={TrueOrFalse203} style={changeStyle203}><Link to="/peopleChange">203</Link></div>}
+        ?<Link to="/peopleState"><div className="box box203" onClick={TrueOrFalse203} style={changeStyle203}>203</div></Link>
+        :<Link to="/peopleChange"><div className="box box203" onClick={TrueOrFalse203} style={changeStyle203}>203</div></Link>}
       {orderDone204
-        ?<div className="box box204" onClick={TrueOrFalse204} style={changeStyle204}> <Link to="/peopleState">204</Link></div>
-        :<div className="box box204" onClick={TrueOrFalse204} style={changeStyle204}><Link to="/peopleChange">204</Link></div>}
+        ?<Link to="/peopleState"><div className="box box204" onClick={TrueOrFalse204} style={changeStyle204}>204</div></Link>
+        :<Link to="/peopleChange"><div className="box box204" onClick={TrueOrFalse204} style={changeStyle204}>204</div></Link>}
     </div>
   );
 }
